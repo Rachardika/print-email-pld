@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <!--[if gte mso 9
+      ]><xml
+        ><o:OfficeDocumentSettings
+          ><o:AllowPNG /><o:PixelsPerInch
+            >96</o:PixelsPerInch
+          ></o:OfficeDocumentSettings
+        ></xml
+      ><!
+    [endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Payment Reminder PLD UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /*<![CDATA[*/
+      a {
+        outline: none;
+        color: #000;
+        text-decoration: underline;
+      }
+      a:hover {
+        text-decoration: none !important;
+      }
+      .h-u a {
+        text-decoration: underline;
+      }
+      .h-u a:hover,
+      .active-t a:hover {
+        text-decoration: none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+      a[href^="tel"]:hover {
+        text-decoration: none !important;
+      }
+      .active-i a:hover,
+      .active-t:hover {
+        opacity: 0.8;
+      }
+      .active-i a,
+      .active-t {
+        transition: all 0.3s ease;
+      }
+      a img {
+        border: none;
+      }
+      b,
+      strong {
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+      }
+      th {
+        padding: 0;
+      }
+
+      .ns span,
+      .ns a {
+        color: inherit !important;
+        text-decoration: none !important;
+        border: none !important;
+      }
+      .l-white a {
+        color: #fff;
+      }
+      [style*="Whyte"] {
+        font-family: "Whyte", Arial, Helvetica, sans-serif !important;
+      }
+      @media only screen and (max-width: 375px) and (min-width: 374px) {
+        .gmail-fix {
+          min-width: 374px !important;
+        }
+      }
+      @media only screen and (max-width: 414px) and (min-width: 413px) {
+        .gmail-fix {
+          min-width: 413px !important;
+        }
+      }
+      @media only screen and (max-width: 705px) {
+        .w-100p {
+          width: 100% !important;
+        }
+        .wi-100p img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        .pt-46 {
+          padding-top: 46px !important;
+        }
+        .pb-32 {
+          padding-bottom: 32px !important;
+        }
+        .pb-42 {
+          padding-bottom: 42px !important;
+        }
+        .pb-44 {
+          padding-bottom: 44px !important;
+        }
+        .pb-98 {
+          padding-bottom: 98px !important;
+        }
+        .fs-16 {
+          font-size: 16px !important;
+        }
+        .fs-20 {
+          font-size: 20px !important;
+        }
+        .lh-23 {
+          line-height: 23px !important;
+        }
+        .pb-103 {
+          padding-bottom: 103px !important;
+        }
+      }
+      /*]]>*/
+    </style>
+  </head>
+  <body
+    style="
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    "
+  >
+    <div class="mktEditable" id="edit_text_1">
+      <table
+        class="gmail-fix"
+        width="100%"
+        style="background: #fff; min-width: 320px"
+        cellspacing="0"
+        cellpadding="0"
+      >
+        <!-- section -->
+        <tbody>
+          <tr>
+            <td>
+              <table
+                class="w-100p"
+                width="650"
+                align="center"
+                style="max-width: 650px; margin: 0 auto"
+                cellpadding="0"
+                cellspacing="0"
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      align="center"
+                      class="pb-32"
+                      style="padding: 28px 24px 24px"
+                    >
+                      <a
+                        style="text-decoration: none"
+                        href="https://pld-ui.com"
+                      >
+                        <img
+                          src="https://dev.pld-ui.com/assets/mailing-images/pld-horizontal-126x40.png"
+                          width="100"
+                          style="
+                            width: 100px;
+                            max-width: 100px;
+                            font-size: 22px;
+                            vertical-align: top;
+                            line-height: 24px;
+                            text-align: center;
+                          "
+                          alt="PLD UI"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="pb-60" style="padding: 0 37px 60px">
+                      <table
+                        align="center"
+                        class="w-100p"
+                        width="550"
+                        style="max-width: 550px; margin: 0 auto"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              align="center"
+                              style="
+                                color: #000;
+                                font-size: 18px;
+                                line-height: 26px;
+                                font-family: 'Trebuchet MS',
+                                  'Lucida Sans Unicode', 'Lucida Grande',
+                                  'Lucida Sans', Arial, sans-serif, Helvetica,
+                                  sans-serif;
+                                text-align: left;
+                                padding-top: 20px;
+                              "
+                            >
+                              <!-- <img
+                                src="https://dev.pld-ui.com/assets/mailing-images/payment-expired.png"
+                                width="600"
+                                style="
+                                  width: 600px;
+                                  max-width: 600px;
+                                  font-size: 22px;
+                                  vertical-align: top;
+                                  line-height: 24px;
+                                  text-align: center;
+                                  margin-bottom: 24px;
+                                "
+                                alt="PLD UI"
+                              /> -->
+                                
+                              <p style="font-size: 18px; text-align: left;">PAYMENT REMINDER</p>
+                                <p style="font-size: 18px;"><strong>Mohon maaf, waktu pengunggahan bukti bayar Anda sudah habis sehingga tiket Anda dianggap hangus.</strong></p>
+                              <br><br>
+
+                              <p>Kepada Peserta,</p>
+                              
+                              <br />
+                              <p>Mohon maaf, tiket Anda dengan detail terlampir, telah dianggap <strong>HANGUS</strong>.
+                              Hal ini disebabkan oleh bukti yang tidak diunggah dalam jangka waktu batas bayar yaitu 3 hari
+                              pasca waktu pembelian. Mohon untuk <strong>tidak melakukan pembayaran apapun</strong>
+                              karena pembayaran akan dianggap tidak sah. Untuk mendaftar ke seminar kami, <strong>Anda harus mendaftar ulang</strong>
+                              di laman event pada website kami.</p>
+                              <br>
+                              <p>Jika Anda memiliki pertanyaan, Anda bisa mengunjungi laman FAQ pada website kami atau bertanya pada Contact
+                              Person masing - masing seminar.</p>
+                              <br>
+                              <p>Terima kasih.</p>
+                              <br>
+                              <p style="text-align: center; font-size: 30px; color: #fc9300;"><strong>TIKET HANGUS</strong></p>
+                            <hr>
+                            <br>
+                            <table>
+                                <td>
+                                    <a style="padding-left: 0px;"
+                              href="https://dev.pld-ui.com/public-payment/29"
+                            >
+                              <button 
+                                style="
+                                  height: 65px;
+                                  width: 600px;
+                                  font-size: 15px;
+                                  padding: 0.5em 1em;
+                                  font-weight: 500;
+                                  color: #fff;
+                                  border: transparent;
+                                  background-color: #e6e6e6;
+                                  text-decoration: none;
+                                  border-radius: 50px;
+                                  cursor: pointer;
+                                  background: #046c6d;
+                                  text-align: left;
+                                "
+                              >
+                                <p><strong>2nd Jakpos</strong></p>
+                                <p>Jakarta Seminar Telinga Hidung Tenggorokan</p>
+                              </button></a
+                            >
+                                </td>
+                            </table>
+                            <table>
+                                <tr>
+                                  <td style="height: 10px;"></td>
+                                </tr>
+                                <tr>
+                                <td style="width: 390px; font-size: 15px;"><strong>Detail Tiket</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td style="width: 200px;"></td>
+                                <td>
+                                    <button
+                                        style="
+                                        height: 35px;
+                                        width: 200px;
+                                        font-size: 15px;
+                                        padding: 0.5em 1em;
+                                        font-weight: 500;
+                                        color: black;
+                                        border: transparent;
+                                        background-color: black;
+                                        text-decoration: none;
+                                        border-radius: 20px;
+                                        cursor: pointer;
+                                        background: #fc9300;
+                                        text-align: left;
+                                        "
+                                    ><strong style="font-size: 12px;">Nomor Peserta: JAKPOS1234</strong>
+                                    </button>
+                                </tr>    
+                                <tr style="font-size: 12px;">
+                                    <td>Nama Seminar</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">2nd Jakpos</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Jenis Event</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">Main Event</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Nama Event</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">Updates in Cardiovascular Diseases</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Waktu Pembelian</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">24 Februari 2021, pukul 21.00 WIB</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Waktu Pembayaran</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">27 Februari 2021, pukul 21.00 WIB</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td><strong>Jumlah</strong> Tiket</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">3</td>
+                                    <td></td>
+                                    <td style="width: 200px; font-size: 14px; text-align: right;"><strong>Total Pembayaran</strong></td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Paket Tiket</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;"></td>
+                                    <td></td>
+                                    <td style="width: 200px; font-size: 20px; text-align: right;"><strong>Rp120.456</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 30px;"></td>
+                                    <td></td>
+                                    <td style="width: 1000px;"></td>
+                                </tr>
+                                <tr>
+                                <td colspan="3" style="width: 390px; font-size: 13px; color: #046c6d;"><strong>Clinical Cardiology Seminar & ACLS Workshop - Early Bird</strong></td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Kuantitas</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">3</td>
+                                </tr>
+                                <tr style="font-size: 12px;">
+                                    <td>Nama Peserta</td>
+                                    <td>:</td>
+                                    <td style="width: 1000px;">Upin, Ipin, Kak Ros</td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 10px;"></td>
+                                </tr>
+                                <table style="font-size: 12px;">
+                                    <tr style="height: 60px;">
+                                        <td></td> 
+                                        <!-- jarak -->
+                                        <td style="width: 250px; background-color: #f1f1f1;"><strong>Nama</strong></td>
+                                        <td style="width: 150px; background-color: #f1f1f1;"><strong>Institusi</strong></td>
+                                        <td style="width: 150px; background-color: #f1f1f1;"><strong>No. HP</strong></td>
+                                        <td style="width: 150px; background-color: #f1f1f1;"><strong>Email</strong></td>
+                                        <td style="width: 150px; background-color: #f1f1f1;"><strong>Role</strong></td>
+                                        <td style="width: 150px;"></td> 
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Nadine Herdwita P. S.</td>
+                                        <td>Institusi</td>
+                                        <td>081231241</td>
+                                        <td>Sprinkle@gmail.com</td>
+                                        <td>Dokter Spesialis</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Nama</td>
+                                        <td>Institusi</td>
+                                        <td>No. HP</td>
+                                        <td>Email</td>
+                                        <td>Role</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Nama</td>
+                                        <td>Institusi</td>
+                                        <td>No. HP</td>
+                                        <td>Email</td>
+                                        <td>Role</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 15px;"><strong>Detail Acara</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;"><strong style="color: #046c6d;">Cardiology (15 SKP IDI)</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;">1. Trauma 28 Februari 2021 pukul 19.00 - 21.00 WIB (via Zoom)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;">2. IPD 29 Februari 2021 pukul 15.00 - 17.00 WIB (via Zoom)</td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td style="width: 30px; height: 20px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;"><strong style="color: #046c6d;">Workshop (20 SKP IDI)</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;">1. Trauma 28 Februari 2021 pukul 19.00 - 21.00 WIB (via Zoom)</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 30px;"></td>
+                                        <td style="width: 400px; font-size: 13px;">2. IPD 29 Februari 2021 pukul 15.00 - 17.00 WIB (via Zoom)</td>
+                                    </tr>
+                                </table>
+                                <tr>
+                                    <td style="height: 20px;"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a style="padding-left: 25px;"
+                                        href="https://dev.pld-ui.com/public-payment/29">
+                                        <button 
+                                        style="
+                                            height: 65px;
+                                            width: 250px;
+                                            font-size: 15px;
+                                            padding: 0.5em 1em;
+                                            font-weight: 500;
+                                            color: black;
+                                            border: transparent;
+                                            background-color: black;
+                                            text-decoration: none;
+                                            border-radius: 25px;
+                                            cursor: pointer;
+                                            background: #fe9300;
+                                            text-align: center;
+                                        "
+                                        >
+                                        <p><strong>Pergi ke Laman Event</strong></p>
+                                        </button></a>
+
+                                        <a style="padding-left: 40px;"
+                                        href="https://dev.pld-ui.com/public-payment/29">
+                                        <button 
+                                        style="
+                                            height: 65px;
+                                            width: 250px;
+                                            font-size: 15px;
+                                            padding: 0.5em 1em;
+                                            font-weight: 500;
+                                            border-color: #fe9300;
+                                            color: black;
+                                            background-color: black;
+                                            border: 4px solid #fe9300;
+                                            text-decoration: none;
+                                            border-radius: 25px;
+                                            cursor: pointer;
+                                            background: #fff;
+                                            text-align: center;
+                                        "
+                                        >
+                                        <p><strong>Pergi ke Laman FAQ</strong></p>
+                                        </button></a>
+                                    </td>
+                            </tr>
+                            </table>
+                              <br />
+                              <br />
+                               
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Footer -->
+                  <tr>
+                    <td>
+                      <table
+                        class="w-100p"
+                        width="540"
+                        align="center"
+                        style="max-width: 540px; margin: 0 auto"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="pt-60"
+                              align="center"
+                              style="
+                                border-top: 1px solid #dedede;
+                                color: #a5a5a5;
+                                font-size: 14px;
+                                line-height: 18px;
+                                font-family: 'Whyte', Arial, Helvetica,
+                                  sans-serif;
+                                text-align: center;
+                                padding: 60px 24px 32px;
+                              "
+                            >
+                              Pelantikan Lulusan Dokter 2022/2023
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Footer -->
+                  <tr>
+                    <td class="" align="center" style="padding: 10px 24px 46px">
+                      <table
+                        width="300"
+                        style="max-width: 300px; margin: 0 auto"
+                        cellpadding="0"
+                        cellspacing="0"
+                        align="center"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="padding: 0 0 32px" align="center">
+                              <table
+                                align="center"
+                                style="margin: 0 auto"
+                                cellpadding="0"
+                                cellspacing="0"
+                              >
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      width="30"
+                                      style="font-size: 1px; line-height: 1px"
+                                    ></td>
+
+                                    <td
+                                      class="active-i"
+                                      style="line-height: 1px; font-size: 1px"
+                                    >
+                                      <a
+                                        style="text-decoration: none"
+                                        href="https://www.instagram.com/pldui/"
+                                        ><img
+                                          src="https://static.figma.com/uploads/3d4f14e1f53a6fba465af3582fdbf381c5015b77"
+                                          width="19"
+                                          style="
+                                            width: 19px;
+                                            max-width: 19px;
+                                            font-size: 10px;
+                                            line-height: 12px;
+                                            font-family: 'Whyte', Arial,
+                                              Helvetica, sans-serif;
+                                            color: #000;
+                                            background-color: #fff;
+                                            vertical-align: top;
+                                            text-align: center;
+                                          "
+                                          alt="instagram"
+                                      /></a>
+                                    </td>
+                                    <td
+                                      width="30"
+                                      style="font-size: 1px; line-height: 1px"
+                                    ></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
